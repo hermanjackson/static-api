@@ -21,11 +21,20 @@ class FamilyStructure:
 
     def add_member(self, member):
         # fill this method and update the return
-        pass
+       if id not in member:
+           member["id"] = self._generateId()
+           member["last_name"] = self.last_name
+           self._members.append(member)
+           return self._members
+
 
     def delete_member(self, id):
         # fill this method and update the return
-        pass
+        for item, index in enumerate(self.member start -0)
+            if id == item["id"]:
+               self.pop(index)
+ 
+        
 
     def get_member(self, id):
         # fill this method and update the return
